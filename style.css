@@ -1,0 +1,39 @@
+ * {
+	margin: 0;
+   	padding: 0; /*обнуляємо стилі */ 
+} 
+ul {
+    list-style-type: none; /* забираємо маркери */
+}
+
+.menu{
+	display: flex;
+}
+
+a {
+	text-decoration: none; /* забираємо підкреслення */
+	display: block; 
+	color: #ffffff;
+	background-color: #878181;
+	padding: 1em; /* збільшуємо зону кліку по кнопці */
+	white-space: nowrap; /* не дозволяє робити переноси слів */
+} 
+.menu > li{
+	padding-left:10px;  
+}
+.menu__submenu > li{
+	width: 100%;
+}
+.menu__submenu{
+	position:absolute; 
+	display:none; 
+}
+li{
+	position:relative; 
+}
+li:hover .menu__submenu{
+display:block; 
+}
+a:hover{
+background-color:green; 	
+}
